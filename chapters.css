@@ -463,3 +463,30 @@
 @media(max-width:700px){.workshop__captions{display:none}.contact__content{padding-inline:18px}}
 @media(min-width:1800px){.workshop__captions span{font-size:1.3cqw}}
 @media(max-width:1100px){.contact__content>p:not(.eyebrow){max-width:none;width:100%;text-align:center;margin-inline:auto}}
+/* Compact hero keeps both illustrated platform signs visible. */
+.hero__scroll,.contact__conversation{display:none}
+@media(max-width:700px){
+ .hero__copy{top:4.5%}
+ .hero h1{font-size:clamp(32px,8.8vw,45px)}
+ .hero__copy>p{margin-top:12px;padding:7px 12px;font-size:clamp(17px,4.3vw,20px)}
+ .hero__cta{margin-top:9px;min-height:44px;width:78%}
+ .hero__scroll{position:absolute;z-index:2;bottom:0;left:50%;transform:translate(-50%,65%);display:flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;color:#285f5c;background:#fff8e7;border:1px solid #9da98f;border-radius:50% 45% 45% 40% / 15%;text-decoration:none;font:20px var(--font-headline);white-space:nowrap}
+ .hero__scroll b{font-size:28px;animation:scroll-cue 1.8s ease-in-out infinite}
+ .cms__details{margin-bottom:12px}
+ .page-world>.section-paper.honest{padding-top:18px!important}
+ .honest__spread{padding-top:20px!important}
+}
+@keyframes scroll-cue{50%{transform:translateY(4px)}}
+@media(prefers-reduced-motion:reduce){.hero__scroll b{animation:none}}
+@media(max-width:1100px){
+ .site-header__inner{position:static}
+ .site-header__inner .site-nav,.site-header__inner .site-nav.is-open{left:0;right:0;width:100%;transform:none;max-height:calc(100dvh - 58px);overflow-y:auto}
+ .contact__conversation{display:block;position:absolute;z-index:2;left:51%;top:clamp(27px,7vw,75px);width:40%;margin:0;padding:clamp(10px,2vw,22px);text-align:center;background:#fffaf0;border:2px solid #526d61;border-radius:45% 45% 40% 25% / 30%;color:#273348;font:700 clamp(20px,3.8vw,38px)/1.05 var(--font-headline);transform:rotate(-3deg)}
+ .contact__conversation::after{content:'';position:absolute;left:-10px;bottom:18%;width:18px;height:16px;background:#fffaf0;border-left:2px solid #526d61;border-bottom:2px solid #526d61;transform:skew(-25deg) rotate(24deg)}
+}
+@media(min-width:701px) and (max-width:1100px){
+ .site-header:not(.is-scrolled) .site-header__inner{width:49%;min-height:48px}
+ .site-header:not(.is-scrolled) .menu-toggle{width:38px;height:38px}
+}
+@media(max-width:700px){.hero__scroll{bottom:3px;transform:translateX(-50%);font-size:18px;min-height:38px}.hero__scroll b{font-size:25px}}
+@media(max-width:700px){.contact__conversation{left:49%;width:46%;padding:12px 8px;font-size:20px}}
