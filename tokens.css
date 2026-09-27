@@ -1,0 +1,17 @@
+:root {
+  --color-paper: #f6ecd9;
+  --color-paper-edge: #d8bd8c;
+  --color-ink: #252943;
+  --color-coral: #f45d50;
+  --color-coral-hover: #dd4e44;
+  --color-teal: #3e8988;
+  --color-teal-hover: #347473;
+  --color-sky: #e5f2ef;
+  --color-focus: #252943;
+  --font-display: "Arial Narrow", Impact, "Roboto Condensed", sans-serif;
+  --font-headline: "Neucha", "Arial Narrow", sans-serif;
+  --font-body: "Arial Narrow", Arial, sans-serif;
+  --font-ui: Arial, sans-serif;
+  --radius-pill: 999px;
+  --duration-quick: 160ms;
+}

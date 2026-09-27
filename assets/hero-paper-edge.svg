@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="none">
+  <filter id="soft" x="-2%" y="-2%" width="104%" height="104%"><feGaussianBlur stdDeviation="0.8"/></filter>
+  <path fill="#fff" filter="url(#soft)" d="M-5-10H1005V461 C990 455 981 470 969 463 C958 457 951 476 939 468 C926 463 922 484 909 477 C895 469 891 493 878 485 C864 480 858 500 844 492 C830 492 819 502 800 500 H200 C184 502 174 490 162 496 C148 501 142 480 130 487 C118 494 107 476 96 480 C85 485 77 467 65 474 C53 481 47 459 37 465 C26 471 18 449-5 456 Z"/>
+</svg>

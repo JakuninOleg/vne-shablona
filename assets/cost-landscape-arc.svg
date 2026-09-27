@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="upper-wash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.20" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.91" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="paper-edge" x="-1%" y="-2%" width="102%" height="105%">
+      <feGaussianBlur stdDeviation="0.7"/>
+    </filter>
+  </defs>
+  <path fill="url(#upper-wash)" filter="url(#paper-edge)" d="M0 0H1000V390C976 387 956 393 932 390C909 386 894 395 870 391C812 382 767 360 727 340C650 304 595 286 500 283C405 286 350 304 273 340C233 360 188 382 130 391C106 395 91 386 68 390C44 393 24 387 0 390Z"/>
+</svg>

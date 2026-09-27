@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" preserveAspectRatio="none">
+  <linearGradient id="top-wash" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.065" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <filter id="soft" x="-2%" y="-2%" width="104%" height="104%"><feGaussianBlur stdDeviation="0.9"/></filter>
+  <path fill="url(#top-wash)" filter="url(#soft)" d="M-5 11 C32 5 54 14 84 8 C114 2 140 16 170 9 C205 1 222 16 252 10 C286 3 315 13 345 9 C380 5 398 16 431 9 C464 3 493 15 524 8 C553 2 584 17 618 10 C651 3 676 14 706 8 C741 2 770 16 802 8 C833 3 861 14 894 9 C929 4 954 16 1005 8 V491 C960 497 930 487 900 493 C864 499 829 487 796 493 C762 498 732 490 698 494 C668 499 641 490 609 495 C576 500 545 490 511 494 C480 499 444 490 410 495 C380 499 350 488 320 495 C285 500 250 490 219 494 C183 500 152 488 119 494 C83 499 54 488-5 495 Z"/>
+</svg>
