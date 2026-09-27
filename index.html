@@ -27,11 +27,10 @@
       {"@context":"https://schema.org","@type":"WebSite","name":"ВНЕ ШАБЛОНА","url":"https://vneshablona.ru/","inLanguage":"ru"}
     </script>
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-    <link rel="preload" as="image" type="image/webp" media="(min-width: 951px)" imagesrcset="/assets/hero-wide-2k-v8.webp 1831w, /assets/hero-wide-2k-v8-hd.webp 3662w" imagesizes="(min-width: 1638px) 2560px, 156.3vw" />
-    <link rel="preload" as="font" type="font/ttf" href="/assets/fonts/Neucha-Regular.ttf" crossorigin />
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/landing.css" />
-    <link rel="stylesheet" href="/chapters.css?v=responsive-6" />
+    <link rel="preload" as="image" type="image/avif" media="(max-width: 950px)" imagesrcset="/assets/hero-mobile-canvas-512.avif 512w, /assets/hero-mobile-canvas-768.avif 768w, /assets/hero-mobile-canvas-1024.avif 1024w" imagesizes="100vw" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" media="(min-width: 951px)" imagesrcset="/assets/hero-wide-2k-v8.webp 1831w, /assets/hero-wide-2k-v8-hd.webp 3662w" imagesizes="(min-width: 1638px) 2560px, 156.3vw" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Neucha-Regular.woff2" crossorigin />
+    <link rel="stylesheet" href="/site.css?v=mobile-perf-1" />
     <script src="/script.js" defer></script>
   </head>
   <body>
@@ -76,8 +75,17 @@
           <picture class="hero__picture">
           <source
             media="(max-width: 950px)"
+            type="image/avif"
+            srcset="/assets/hero-mobile-canvas-512.avif 512w, /assets/hero-mobile-canvas-768.avif 768w, /assets/hero-mobile-canvas-1024.avif 1024w"
+            sizes="100vw"
+            width="1024"
+            height="1536"
+          />
+          <source
+            media="(max-width: 950px)"
             type="image/webp"
-            srcset="/assets/hero-mobile-canvas.webp"
+            srcset="/assets/hero-mobile-canvas-512.webp 512w, /assets/hero-mobile-canvas-768.webp 768w, /assets/hero-mobile-canvas-1024.webp 1024w"
+            sizes="100vw"
             width="1024"
             height="1536"
           />
@@ -120,22 +128,22 @@
           <div class="story-grid">
             <article class="comic-panel">
               <h3><span>1.</span> Шаблонные рамки</h3>
-              <div class="comic-panel__art"><img src="/assets/story-template.webp" width="570" height="631" loading="lazy" alt="Владелец пытается поместить большую идею в маленькую коробку." /></div>
+              <div class="comic-panel__art"><picture><source type="image/avif" srcset="/assets/story-template-400.avif 400w, /assets/story-template-570.avif 570w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" /><img src="/assets/story-template.webp" srcset="/assets/story-template-400.webp 400w, /assets/story-template.webp 570w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" width="570" height="631" loading="lazy" alt="Владелец пытается поместить большую идею в маленькую коробку." /></picture></div>
               <p><strong>Tilda</strong> даёт готовые решения. Удобно на старте, но вы быстро упираетесь в ограничения.</p>
             </article>
             <article class="comic-panel">
               <h3><span>2.</span> Зависимость от плагинов</h3>
-              <div class="comic-panel__art"><img src="/assets/story-plugins.webp" width="586" height="631" loading="lazy" alt="Механик окружён множеством труб и дополнительных модулей." /></div>
+              <div class="comic-panel__art"><picture><source type="image/avif" srcset="/assets/story-plugins-400.avif 400w, /assets/story-plugins-586.avif 586w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" /><img src="/assets/story-plugins.webp" srcset="/assets/story-plugins-400.webp 400w, /assets/story-plugins.webp 586w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" width="586" height="631" loading="lazy" alt="Механик окружён множеством труб и дополнительных модулей." /></picture></div>
               <p>В <strong>WordPress</strong> многое держится на плагинах. Чем больше их нужно, тем сложнее система.</p>
             </article>
             <article class="comic-panel">
               <h3><span>3.</span> Опять проблемы</h3>
-              <div class="comic-panel__art"><img src="/assets/story-breakdown.webp" width="590" height="653" loading="lazy" alt="Растерянный владелец рядом со сломанной машиной." /></div>
+              <div class="comic-panel__art"><picture><source type="image/avif" srcset="/assets/story-breakdown-400.avif 400w, /assets/story-breakdown-590.avif 590w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" /><img src="/assets/story-breakdown.webp" srcset="/assets/story-breakdown-400.webp 400w, /assets/story-breakdown.webp 590w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" width="590" height="653" loading="lazy" alt="Растерянный владелец рядом со сломанной машиной." /></picture></div>
               <p>Время уходит на обслуживание хрупкой системы вместо развития бизнеса.</p>
             </article>
             <article class="comic-panel">
               <h3><span>4.</span> Свой путь</h3>
-              <div class="comic-panel__art"><img src="/assets/story-custom.webp" width="586" height="653" loading="lazy" alt="Разработчик и владелец вместе проектируют сайт." /></div>
+              <div class="comic-panel__art"><picture><source type="image/avif" srcset="/assets/story-custom-400.avif 400w, /assets/story-custom-586.avif 586w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" /><img src="/assets/story-custom.webp" srcset="/assets/story-custom-400.webp 400w, /assets/story-custom.webp 586w" sizes="(max-width: 700px) calc(100vw - 44px), (max-width: 950px) 50vw, 25vw" width="586" height="653" loading="lazy" alt="Разработчик и владелец вместе проектируют сайт." /></picture></div>
               <p>Индивидуальная разработка — сайт, который точно подходит вашему бизнесу и растёт вместе с вами.</p>
             </article>
           </div>
@@ -145,9 +153,9 @@
       <section class="cost section-paper section-paper--blue" id="cost" aria-labelledby="cost-title"><div class="section-inner">
         <div class="section-heading section-heading--center"><h2 id="cost-title">Самописный сайт стоит дешевле конструктора</h2><p>Смотрите на полную стоимость владения: лицензии, плагины, постоянные доработки и исправление ошибок.</p></div>
         <div class="triptych cost-grid">
-          <article class="story-card"><span class="story-card__tag tag--coral">Tilda</span><img src="/assets/cost-tilda.webp" width="634" height="735" loading="lazy" alt="Чек растёт вместе с новыми коробками и услугами." /><div class="story-card__copy"><h3>Сначала — один тариф</h3><p>Потом появляются дополнительные расходы.</p><ul class="paper-tags"><li>Тариф</li><li>Доп. блоки</li><li>Интеграции</li><li>Формы</li><li>Ещё один тариф</li></ul></div></article>
-          <article class="story-card"><span class="story-card__tag tag--navy">WordPress</span><img src="/assets/cost-wordpress.webp" width="640" height="735" loading="lazy" alt="Механик держит длинный счёт за плагины и обслуживание." /><div class="story-card__copy"><h3>Счёт становится длиннее</h3><p>Сложная система требует внимания и поддержки.</p><ul class="paper-tags"><li>Плагины</li><li>Лицензии</li><li>Обслуживание</li><li>Доработки</li><li>Поддержка</li></ul></div></article>
-          <article class="story-card story-card--good"><span class="story-card__tag tag--teal">Свой сайт</span><img src="/assets/cost-custom.webp" width="632" height="744" loading="lazy" alt="Владелец работает за ноутбуком и узнаёт, что ежемесячной платы за сам сайт нет." /><div class="story-card__copy"><h3>Платите за разработку</h3><p>А не за право продолжать пользоваться собственным сайтом.</p><blockquote>«А где ежемесячная плата за сам сайт?»<br />«Её нет. Вы платите за разработку, а не за подписку.»</blockquote></div></article>
+          <article class="story-card"><span class="story-card__tag tag--coral">Tilda</span><picture><source type="image/avif" srcset="/assets/cost-tilda-400.avif 400w, /assets/cost-tilda-634.avif 634w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" /><img src="/assets/cost-tilda.webp" srcset="/assets/cost-tilda-400.webp 400w, /assets/cost-tilda.webp 634w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" width="634" height="735" loading="lazy" alt="Чек растёт вместе с новыми коробками и услугами." /></picture><div class="story-card__copy"><h3>Сначала — один тариф</h3><p>Потом появляются дополнительные расходы.</p><ul class="paper-tags"><li>Тариф</li><li>Доп. блоки</li><li>Интеграции</li><li>Формы</li><li>Ещё один тариф</li></ul></div></article>
+          <article class="story-card"><span class="story-card__tag tag--navy">WordPress</span><picture><source type="image/avif" srcset="/assets/cost-wordpress-400.avif 400w, /assets/cost-wordpress-640.avif 640w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" /><img src="/assets/cost-wordpress.webp" srcset="/assets/cost-wordpress-400.webp 400w, /assets/cost-wordpress.webp 640w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" width="640" height="735" loading="lazy" alt="Механик держит длинный счёт за плагины и обслуживание." /></picture><div class="story-card__copy"><h3>Счёт становится длиннее</h3><p>Сложная система требует внимания и поддержки.</p><ul class="paper-tags"><li>Плагины</li><li>Лицензии</li><li>Обслуживание</li><li>Доработки</li><li>Поддержка</li></ul></div></article>
+          <article class="story-card story-card--good"><span class="story-card__tag tag--teal">Свой сайт</span><picture><source type="image/avif" srcset="/assets/cost-custom-400.avif 400w, /assets/cost-custom-632.avif 632w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" /><img src="/assets/cost-custom.webp" srcset="/assets/cost-custom-400.webp 400w, /assets/cost-custom.webp 632w" sizes="(max-width: 950px) calc(100vw - 48px), 33vw" width="632" height="744" loading="lazy" alt="Владелец работает за ноутбуком и узнаёт, что ежемесячной платы за сам сайт нет." /></picture><div class="story-card__copy"><h3>Платите за разработку</h3><p>А не за право продолжать пользоваться собственным сайтом.</p><blockquote>«А где ежемесячная плата за сам сайт?»<br />«Её нет. Вы платите за разработку, а не за подписку.»</blockquote></div></article>
         </div><h3 class="cost__promise">Смету рассчитываем под вашу задачу и показываем все расходы до начала работы.</h3><a class="pill-button cost__cta" href="#contact">Рассчитать <span aria-hidden="true">→</span></a>
       </div>
       </section>

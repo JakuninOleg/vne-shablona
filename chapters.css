@@ -166,7 +166,7 @@
 .ownership-grid figcaption{display:flex;min-height:0;padding:14px 3px 4px;background:transparent}
 
 /* Keep all cost and road illustrations in equal, ink-framed windows. */
-.cost-grid .story-card>img{display:block;width:100%;border:3px solid #293341;border-radius:4px 6px 3px 5px / 5px 3px 6px 4px;clip-path:none;box-shadow:2px 3px 0 #394b4b55}
+.cost-grid .story-card>picture>img{display:block;width:100%;border:3px solid #293341;border-radius:4px 6px 3px 5px / 5px 3px 6px 4px;clip-path:none;box-shadow:2px 3px 0 #394b4b55}
 .race-grid figure{display:flex;flex-direction:column}
 .race-grid img,.race-grid figure:nth-child(3) img{display:block;width:100%;height:auto;aspect-ratio:1.925;object-fit:cover;object-position:center center;background:#dce8e1}
 .race-grid figure:nth-child(3) img{object-position:center 51%}
@@ -253,7 +253,7 @@
 
 /* Printed panels use the same opaque mat and the original hand-inked image edges. */
 .cost-grid .story-card{padding:8px;background:#fffaf0;border:1px solid #c9bba8;box-shadow:3px 5px 0 #29334126}
-.cost-grid .story-card>img{box-sizing:border-box;display:block;width:100%;height:auto;aspect-ratio:.84;object-fit:contain;object-position:center;padding:7px;border:2px solid #293341;border-radius:6px 4px 7px 5px;clip-path:none;background:#fffaf0;box-shadow:2px 3px 0 #394b4b55}
+.cost-grid .story-card>picture>img{box-sizing:border-box;display:block;width:100%;height:auto;aspect-ratio:.84;object-fit:contain;object-position:center;padding:7px;border:2px solid #293341;border-radius:6px 4px 7px 5px;clip-path:none;background:#fffaf0;box-shadow:2px 3px 0 #394b4b55}
 .cost-grid .story-card__copy{padding:16px 13px 18px;background:#fffaf0}
 
 /* The check is measured per category, with the question in its own centered row. */

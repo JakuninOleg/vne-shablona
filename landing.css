@@ -64,7 +64,7 @@
 .triptych{gap:clamp(15px,1.5vw,29px)}
 .cost-grid{align-items:stretch}
 .cost-grid .story-card{display:flex;flex-direction:column;min-width:0;padding:0;background:#fffaf0a8;border:0;box-shadow:none;transform:none}
-.cost-grid .story-card>img{width:100%;height:auto;aspect-ratio:0.86;object-fit:contain;border:0;background:#f7efdf;clip-path:polygon(.4% .5%,18% .2%,34% .6%,50% .2%,67% .7%,83% .2%,99.5% .6%,99.7% 35%,99.4% 66%,99.6% 99.5%,79% 99.8%,55% 99.4%,31% 99.8%,.5% 99.5%,.3% 68%,.6% 35%)}
+.cost-grid .story-card>picture>img{width:100%;height:auto;aspect-ratio:0.86;object-fit:contain;border:0;background:#f7efdf;clip-path:polygon(.4% .5%,18% .2%,34% .6%,50% .2%,67% .7%,83% .2%,99.5% .6%,99.7% 35%,99.4% 66%,99.6% 99.5%,79% 99.8%,55% 99.4%,31% 99.8%,.5% 99.5%,.3% 68%,.6% 35%)}
 .cost-grid .story-card__copy{flex:1;padding:16px 10px 5px}
 .cost-grid .story-card h3{font-size:clamp(26px,1.65vw,34px)}
 .cost-grid .story-card p{max-width:42ch;font-size:clamp(16px,1vw,19px);line-height:1.28}
@@ -166,7 +166,7 @@
 
 @media(max-width:950px){
   .triptych{grid-template-columns:1fr;max-width:650px;margin-inline:auto}
-  .cost-grid .story-card>img{max-height:none}
+  .cost-grid .story-card>picture>img{max-height:none}
   .race-grid img,.ownership-grid img{height:auto}
   .cms__layout{grid-template-columns:1fr;max-width:650px}
   .cms__art{justify-self:center}
