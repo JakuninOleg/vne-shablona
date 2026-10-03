@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#f6ecd9" />
+    <title>Страница не найдена — ВНЕ ШАБЛОНА</title>
+    <meta name="description" content="Этой страницы нет. Вернитесь на главную или оставьте заявку на разработку сайта." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Neucha-Regular.woff2" crossorigin />
+    <link rel="stylesheet" href="/404.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="not-found-page">
+    <header class="not-found-header">
+      <div class="not-found-header__inner">
+        <a class="not-found-header__brand" href="/" aria-label="ВНЕ ШАБЛОНА — на главную">
+          <img src="/assets/logo-vne-shablona.svg" width="920" height="200" alt="ВНЕ ШАБЛОНА" />
+        </a>
+        <a class="not-found-header__back" href="/">На главную <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main class="not-found-main">
+      <section class="not-found-story" aria-labelledby="not-found-title">
+        <div class="not-found-frame" aria-hidden="true">
+          <span class="not-found-frame__corner not-found-frame__corner--top"></span>
+          <span class="not-found-frame__corner not-found-frame__corner--bottom"></span>
+          <div class="not-found-frame__number">404</div>
+          <svg class="not-found-frame__route" viewBox="0 0 350 150" fill="none" focusable="false">
+            <path d="M15 115C78 148 109 54 171 83S259 148 337 20" stroke="#3e8988" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 10" />
+            <path d="m316 25 21-5-8 21" stroke="#3e8988" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="not-found-frame__stamp">Кадр не найден</span>
+        </div>
+        <div class="not-found-story__copy">
+          <h1 id="not-found-title">Этой страницы<br />здесь нет</h1>
+          <p>Возможно, адрес изменился или в нём опечатка. На главной можно продолжить знакомство с сайтом.</p>
+          <a class="not-found-button" href="/">Вернуться на главную <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="not-found-contact" aria-labelledby="not-found-contact-title">
+        <div class="not-found-contact__clip" aria-hidden="true"></div>
+        <div class="not-found-contact__heading">
+          <span class="not-found-contact__sketch" aria-hidden="true">✎</span>
+          <div>
+            <h2 id="not-found-contact-title">Пришли обсудить сайт?</h2>
+            <p>Расскажите о задаче — ответим по вашему контакту.</p>
+          </div>
+        </div>
+        <form class="not-found-form" id="lead-form" aria-label="Заявка на обсуждение проекта">
+          <label>Ваше имя
+            <input type="text" name="Имя" autocomplete="name" placeholder="Как к вам обращаться?" maxlength="100" required />
+          </label>
+          <label>Как с вами связаться
+            <input type="text" name="Контакт" placeholder="Почта, телефон или Telegram" maxlength="200" required />
+          </label>
+          <label>Компания <span class="not-found-form__optional">(необязательно)</span>
+            <input type="text" name="Компания" autocomplete="organization" placeholder="Название или сфера" maxlength="120" />
+          </label>
+          <label>Идея или задача
+            <textarea name="Задача" rows="3" placeholder="Что вы хотите сделать?" maxlength="4000" required></textarea>
+          </label>
+          <label class="not-found-form__consent">
+            <input type="checkbox" required />
+            <span>Даю согласие на обработку персональных данных для ответа на заявку.</span>
+          </label>
+          <p class="not-found-form__legal">Перед отправкой прочитайте <a href="/legal/#consent" target="_blank" rel="noopener noreferrer">согласие</a> и <a href="/legal/#policy" target="_blank" rel="noopener noreferrer">политику обработки данных</a>.</p>
+          <button class="not-found-button not-found-button--submit" type="submit">
+            <span class="contact__submit-label">Отправить заявку</span><span aria-hidden="true">→</span>
+          </button>
+          <p class="contact__form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="not-found-footer">
+      <span>ВНЕ ШАБЛОНА</span>
+      <a href="/legal/">Правовые документы</a>
+    </footer>
+  </body>
+</html>
