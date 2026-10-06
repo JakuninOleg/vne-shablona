@@ -135,6 +135,7 @@ if (leadForm) {
         throw new Error('Заявку не удалось отправить. Попробуйте ещё раз чуть позже.');
       }
 
+      document.dispatchEvent(new CustomEvent('vne:lead-success'));
       leadForm.reset();
       status.textContent = 'Заявка отправлена! Мы свяжемся с вами по указанному контакту.';
       status.dataset.state = 'success';

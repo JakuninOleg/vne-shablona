@@ -1,0 +1,25 @@
+name: Notify IndexNow after deployment
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: true
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Wait for published changed files and notify canonical pages
+        env:
+          BEFORE_SHA: ${{ github.event.before }}
+        run: node scripts/indexnow-after-deploy.mjs
