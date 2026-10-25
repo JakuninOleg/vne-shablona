@@ -37,7 +37,7 @@ def artwork(name, alt, *, eager=False, sizes='(max-width: 760px) 94vw, 52vw'):
     stem=Path(name).stem
     width,height=next(((s['width'],s['height']) for s in SERVICES if s['image']==name),(1870,841))
     loading='fetchpriority="high"' if eager else 'loading="lazy"'
-    return f'<img src="/assets/{name}" srcset="/assets/{stem}-640.webp 640w, /assets/{stem}-1280.webp 1280w, /assets/{name} {width}w" sizes="{sizes}" width="{width}" height="{height}" alt="{e(alt)}" {loading} decoding="async" />'
+    return f'<picture><source type="image/avif" srcset="/assets/{stem}-640.avif 640w, /assets/{stem}-1280.avif 1280w, /assets/{stem}.avif {width}w" sizes="{sizes}" /><img src="/assets/{name}" srcset="/assets/{stem}-640.webp 640w, /assets/{stem}-1280.webp 1280w, /assets/{name} {width}w" sizes="{sizes}" width="{width}" height="{height}" alt="{e(alt)}" {loading} decoding="async" /></picture>'
 
 def breadcrumbs(name=None):
     tail=f'<a href="/uslugi/">Перенос и переделка</a><span aria-hidden="true">/</span><span aria-current="page">{e(name)}</span>' if name else '<span aria-current="page">Перенос и переделка</span>'
@@ -57,7 +57,7 @@ def page(path, title, description, content, name, extra_graph, image):
 <title>{e(title)}</title><meta name="description" content="{e(description)}" /><link rel="canonical" href="{canonical}" />
 <meta name="theme-color" content="#f6ecd9" /><meta property="og:type" content="website" /><meta property="og:locale" content="ru_RU" /><meta property="og:site_name" content="ВНЕ ШАБЛОНА" /><meta property="og:title" content="{e(title)}" /><meta property="og:description" content="{e(description)}" /><meta property="og:url" content="{canonical}" /><meta property="og:image" content="{ORIGIN}/assets/{image}" /><meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Neucha-Regular.woff2" crossorigin />
-<link rel="stylesheet" href="/site.css?v=mobile-perf-1" /><link rel="stylesheet" href="/services.css?v=comic-2" /><link rel="stylesheet" href="/analytics.css" />
+<link rel="stylesheet" href="/site.min.css?v=perf-20261025" />
 <script type="application/ld+json">{schema}</script><script src="/script.js" defer></script><script src="/analytics.js" defer></script></head>
 <body class="service-page">{header()}<main id="main">{content}{form(name)}</main>{footer()}</body></html>'''
     dest=ROOT/path.strip('/')/'index.html'
@@ -102,7 +102,7 @@ page('/uslugi/','Перенос и переделка сайтов: Tilda, WordP
 block='<!-- migration-start --><section class="migration-home" id="migration" aria-labelledby="migration-title">'+migration_intro()+'''<div class="section-inner"><div class="migration-routes">'''+service_links()+'''</div></div></section><!-- migration-end -->'''
 home=re.sub(r'<!-- migration-start -->.*?<!-- migration-end -->','',home,flags=re.S)
 home=home.replace('<section class="process section-paper',block+'\n      <section class="process section-paper',1)
-home=re.sub(r'<link rel="stylesheet" href="/services\.css[^\"]*"\s*/>','<link rel="stylesheet" href="/services.css?v=comic-2" />',home)
+
 proof_home='<!-- migration-proof-start -->'+proof()+'<!-- migration-proof-end -->'
 home=re.sub(r'<!-- migration-proof-start -->.*?<!-- migration-proof-end -->',lambda _:proof_home,home,flags=re.S)
 home='\n'.join(line.rstrip() for line in home.splitlines())+'\n'
