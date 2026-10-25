@@ -52,8 +52,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .site-nav a,.site-header__cta{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font-weight:700;font-size:clamp(13px,.85vw,15px)}
 .site-nav a:hover,.site-footer a:hover{color:var(--color-teal)}
 .site-nav__cta{display:none!important}
-.site-header__cta{justify-content:center;flex:0 0 auto;padding:0 18px;border-radius:999px;color:var(--color-paper);background:var(--color-teal)}
-.site-header__cta:hover{background:var(--color-teal-hover)}
+.site-header__cta{justify-content:center;flex:0 0 auto;padding:0 18px;border-radius:999px;color:var(--color-paper);background:var(--color-teal-hover)}
+.site-header__cta:hover{background:#286763}
 .menu-toggle{display:none}
 
 /* The illustrated stage stays bounded; the new painting extends its world on wide screens. */

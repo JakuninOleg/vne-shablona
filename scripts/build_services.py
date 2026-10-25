@@ -57,7 +57,7 @@ def page(path, title, description, content, name, extra_graph, image):
 <title>{e(title)}</title><meta name="description" content="{e(description)}" /><link rel="canonical" href="{canonical}" />
 <meta name="theme-color" content="#f6ecd9" /><meta property="og:type" content="website" /><meta property="og:locale" content="ru_RU" /><meta property="og:site_name" content="ВНЕ ШАБЛОНА" /><meta property="og:title" content="{e(title)}" /><meta property="og:description" content="{e(description)}" /><meta property="og:url" content="{canonical}" /><meta property="og:image" content="{ORIGIN}/assets/{image}" /><meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Neucha-Regular.woff2" crossorigin />
-<link rel="stylesheet" href="/site.min.css?v=perf-20261025" />
+<link rel="stylesheet" href="/site.min.css?v=perf-20261025b" />
 <script type="application/ld+json">{schema}</script><script src="/script.js" defer></script><script src="/analytics.js" defer></script></head>
 <body class="service-page">{header()}<main id="main">{content}{form(name)}</main>{footer()}</body></html>'''
     dest=ROOT/path.strip('/')/'index.html'
